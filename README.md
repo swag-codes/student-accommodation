@@ -44,3 +44,9 @@ StayNest is a student accommodation website built as a web development portfolio
 ## Project Status
 
 Portfolio project under development.
+
+## Screenshots
+
+### Homepage
+
+![StayNest Homepage](screenshots/staynest-homepage.png)
