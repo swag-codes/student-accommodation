@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayNest | Student Accommodation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+
+
+
+<header>
+    <div class="header-content">
+        <div class="header-brand">
+            <h1>StayNest</h1>
+            <p>Find a place that feels like home.</p>
+        </div>
+
+        <div class="header-actions">
+
+<button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Switch to dark mode"
+    aria-pressed="false"
+>
+    <span class="theme-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.42 1.42"></path>
+            <path d="m17.65 17.65 1.42 1.42"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.35 17.65-1.42 1.42"></path>
+            <path d="m19.07 4.93-1.42 1.42"></path>
+        </svg>
+    </span>
+</button>
+
+
+            <div id="auth-controls">
+                <a href="auth/login.php" class="auth-link">Log In</a>
+                <a href="auth/register.php" class="auth-link">Register</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+    <main>
+        <section id="property-listings">
+            <h2>Find Your Stay</h2>
+            <p>Explore accommodation that fits your needs.</p>
+            <div id="staynest-react-summary"></div>
+
+
+<div class="filters">
+    <div class="filter-group">
+        <label for="city-filter">City</label>
+        <select id="city-filter">
+            <option value="">All cities</option>
+            <option value="pune">Pune</option>
+            <option value="kolkata">Kolkata</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="budget-filter">Maximum monthly budget</label>
+        <select id="budget-filter">
+            <option value="">Any budget</option>
+            <option value="8000">₹8,000</option>
+            <option value="10000">₹10,000</option>
+            <option value="12000">₹12,000</option>
+            <option value="15000">₹15,000</option>
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="gender-filter">Accommodation</label>
+        <select id="gender-filter">
+            <option value="">All options</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="any">Any gender</option>
+        </select>
+    </div>
+</div>
+
+
+
+<div id="property-grid">
+    <p id="loading-properties">Loading properties...</p>
+
+    <p id="no-results" hidden>
+        No properties match your filters. Try changing your selections.
+    </p>
+</div>
+
+</section>
+<section id="property-details" hidden>
+    <button id="back-to-listings" type="button">
+        ← Back to listings
+    </button>
+
+    <div class="details-content">
+        <div class="details-gallery">
+    <img id="details-image" src="" alt="Property bedroom">
+
+    <div id="gallery-thumbnails" class="gallery-thumbnails"></div>
+</div>
+
+        <div class="details-info">
+            <p id="details-location" class="property-location"></p>
+            <h2 id="details-name"></h2>
+            <p id="details-price" class="property-price"></p>
+            <p id="details-rating" class="property-rating"></p>
+            <p id="details-description"></p>
+
+            <h3>Amenities</h3>
+            <ul id="details-amenities"></ul>
+
+            <button id="interested-button" type="button">
+                I'm Interested
+            </button>
+        </div>
+    </div>
+</section>
+    </main>
+
+<script type="module" src="react-widget/dist/assets/index-CEFC1Lf4.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Local database credentials
+/db.php
+/.env
+/.env.*
+
+# Dependencies and generated build files
+/react-widget/node_modules/
+/react-widget/dist/
+
+# macOS and editor files
+.DS_Store
+.vscode/
