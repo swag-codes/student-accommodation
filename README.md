@@ -26,11 +26,19 @@ StayNest is a student accommodation website built as a web development portfolio
 ## Local Setup
 
 1. Clone this repository.
-2. Install PHP and MariaDB.
+2. Install PHP, MariaDB, and Node.js with npm.
 3. Create a MariaDB database named `staynest`.
 4. Configure your local database connection in `db.php`.
 5. Create the required tables and populate the database with sample properties and amenities.
-6. Install the React widget dependencies and build the widget from the `react-widget` directory.
+6. Build the React widget:
+
+   ```bash
+   cd react-widget
+   npm install
+   npm run build
+   cd ..
+   ```
+
 7. Start the PHP development server from the project root:
 
    ```bash
