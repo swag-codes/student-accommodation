@@ -58,3 +58,7 @@ Portfolio project under development.
 ### Homepage
 
 ![StayNest Homepage](screenshots/staynest-homepage.png)
+
+### Property Details
+
+![StayNest Property Details](screenshots/staynest-property-details.png)
